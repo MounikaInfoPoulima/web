@@ -1,0 +1,194 @@
+/* Reset some basic styles for consistency */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7f9;
+    margin: 0;
+    padding: 0;
+}
+.panchang-text-container {
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 8; 
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Style for the Navigation Container */
+
+
+/* Search container styling - move to the top-left */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;  /* Make it fixed to the top */
+    top: 20px;        /* Distance from the top */
+    left: 130px;       /* Distance from the left */
+    z-index: 10;      /* Ensure it's on top of other elements */
+
+}
+
+/* Input Field Styling for Search */
+.search-input {
+    height: 40px;
+    width: 300px;
+    padding-left: 30px;  /* Space for the icon */
+    border-radius: 20px;
+    padding-left: -15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;  /* Remove default outline */
+}
+.search-input::placeholder {
+    padding-left: 20px; /* Add padding to the placeholder text */
+    color: #aaa;        /* Set color of the placeholder text */
+    font-size: 14px;    /* Optional: Adjust font size of the placeholder */
+}
+
+/* Style for the search button with icon */
+.search-icon {
+    position: absolute;
+    left: 8px; /* Position the icon inside the input on the left */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon .icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Optional hover effects */
+.search-container:hover .search-input {
+    border-color: #56FBF9; /* Change border color on hover */
+}
+
+
+.Container {
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+
+}
+
+/* Style for each navigation link */
+.Container li a {
+    text-decoration: none; 
+    color: #333; /* Set default text color */
+    padding: 10px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Underline text on hover */
+.Container li a:hover {
+    text-decoration: underline; 
+    color: #0077cc; 
+    background-color: #b0e0e6; 
+}
+.Login{
+    background-color: aqua;
+}
+
+
+
+main {
+    display: flex;
+    margin-top: 50px; 
+    width: 100%;
+    height: 100%;
+}
+ 
+.image-container {
+    justify-content: center;   
+    position: relative;        
+    width: 100%;               
+    height: 100vh;
+    margin-top: 30px;
+    margin-left: 150px;
+
+               
+}
+
+
+/* Aside section stylings */
+
+aside {
+    width: 80px;
+    background: linear-gradient(205.23deg, #3C3A3A 1.7%, #56FBF9 34.22%, #355F8D 93.07%); 
+    position: fixed;
+    top: 0px; 
+    bottom: 0;
+    left: 0;
+    z-index: 25; 
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.content {
+    margin-left: 250px; /* Match the width of the aside */
+    padding: 20px;
+    width: calc(100% - 250px); /* Take full width minus the sidebar width */
+}
+
+
+
+/* Footer section stylings */
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1E2A47;
+    text-align: bottom;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    padding: 40px;
+
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px
+}
+.footer-logo img {
+    width: 150px;
+    height: 150px;
+    margin-left: -500px;
+    margin-right: 500px;
+}
