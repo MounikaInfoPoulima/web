@@ -1,0 +1,146 @@
+/* Nav Bar */
+@media screen and (max-width: 480px) {
+    nav {
+      padding: 5px 10px;
+    }
+  
+    .Container {
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .search-input {
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    .Register, .Login {
+      font-size: 12px;
+    }
+  
+    .search-icon img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+/* aside section */
+  /* For tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    aside {
+      width: 150px;
+      padding: 5px;
+    }
+  
+    aside img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .asidebar a img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  /* Main Content */
+  /* For mobile devices (480px and below) */
+  @media screen and (max-width: 480px) {
+    aside {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+  
+    aside img {
+      width: 35px;
+      height: 35px;
+      margin: 0;
+    }
+  
+    .asidebar {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .asidebar a img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .panchang-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .panchang-section {
+      width: 100%;
+    }
+  
+    .panchang-timing {
+      width: 100%;
+    }
+  
+    .panchang-title {
+      font-size: 20px;
+    }
+  }
+  
+  /* Main Content */
+  /* Mobile Devices (480px and below) */
+  @media screen and (max-width: 480px) {
+    .image-container {
+      padding: 10px;
+    }
+  
+    .panchang-title {
+      font-size: 18px;
+    }
+  
+    .panchang-section {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .panchang-timing {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    #styled-image img {
+      border-radius: 5px;
+    }
+  }
+
+  /* secound paragraph */
+  @media screen and (max-width: 768px) {
+    .report {
+      padding: 15px;
+    }
+  
+    .report h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .report p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Mobile Devices (480px and below) */
+  @media screen and (max-width: 480px) {
+    .report {
+      padding: 10px;
+    }
+  
+    .report h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+  
+    .report p {
+      font-size: 13px;
+    }
+  }

@@ -118,6 +118,7 @@ nav ul li a:hover {
     background-color: aqua;
 }
 
+/* media queries for nav bar */
 
 
 main {
@@ -161,34 +162,57 @@ aside {
 
 
 
-/* Footer section stylings */
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #1E2A47;
-    text-align: bottom;
-    height: 100px;
-    width: 100%;
-    position: fixed;
+/* Style for the footer */
+footer {
+    position: fixed;  
     bottom: 0;
-    left: 0;
-    z-index: 5;
-    padding: 40px;
-
-}
-
-.footer-logo {
+    width: 100%;  /* Full width of the page */
+    background-color: #1b143f;  /* Dark background for the footer */
+    color: white;  /* White text */
+    text-align: center;  /* Center everything inside the footer */
+    padding: 20px 0;  /* Padding for spacing around content */
+  }
+  
+  /* Container for footer content */
+  .footer-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px
-}
-.footer-logo img {
-    width: 150px;
-    height: 150px;
-    margin-left: -500px;
-    margin-right: 500px;
-}
+    flex-direction: column;
+    justify-content: space-between; /* Distribute items across the footer */
+    align-items: center;  /* Center all child elements horizontally */
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center; /* Center the image vertically */
+  }
+  
+  /* Style for the footer logo image */
+  .footer-logo img {
+    width: 150px;  /* You can adjust the size of the footer image */
+    margin-bottom: 10px; 
+    margin-right: 1000px; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .footer-text p {
+    font-size: 14px;  /* Font size for the text */
+    margin-left:800px; 
+    margin-bottom: 30px; /* Remove default margin */
+    max-width: 500px;  /* Optional: Limit the width of the paragraph */
+    line-height: 1.5; /* Line height for better readability */
+    color: white; /* Ensure the text is visible on dark background */
+  }
+  
+  /* Style for the copyright text */
+  .copyright p {
+    font-size: 14px;  /* Font size for the copyright text */
+    margin: 0;  /* Remove any default margin */
+  }
+  
+  /* Optional: Hover effect on the copyright text */
+  .copyright p:hover {
+    color: #f0f0f0;  /* Slightly lighter color on hover */
+    cursor: pointer;  /* Change cursor to pointer */
+  }
+  

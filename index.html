@@ -6,6 +6,7 @@
     <title>Basic Web Page</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel ="stylesheet" href = "main.css">
+    <link rel ="stylesheet" href = "responsive.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -40,15 +41,15 @@
     <main>
       <!-- Aside Section (Sidebar) -->
       <aside>
-        <img src="./images/Aside section img.png" width="50px" height="50px" styles="padding:50px; margin:10px">
+        <img src="./images/Aside section img.png" width="50px" height="50px" class="aside-logo" >
         <img src="./images/Home icon.png" width="50px" height="50px" style="background-color: lightcyan; padding: 15px;">
 
-       <div class="asidebar">
-        <a href="kundali.html"> <img src="./images/Kundali icon.png" width="50px" height="50px"></a>
-        <a href="e-pooja.html"> <img src="./images/E-Pooja.png" width="50px" height="50px"></a>
-        <a href ="panchangam.html"> <img src="./images/Panchangam.png" width="50px" height="50px"></a>
-       <a href="matchmaking.html"> <img src="./images/Match Making.png" width="50px" height="50px"></a>
-        <a href ="Search.html"><img src="./images/search.png" width="50px" height="50px"></a>
+       <div class="asidebar" style="padding: 10px;">
+        <a href="kundali.html"> <img src="./images/Kundali icon.png" width="40px" height="40px"></a>
+        <a href="e-pooja.html"> <img src="./images/E-Pooja.png" width="40px" height="40px" class="Kundali-img"></a>
+        <a href ="panchangam.html"> <img src="./images/Panchangam.png" width="40px" height="40px" class="E-pooja-img"></a>
+       <a href="matchmaking.html"> <img src="./images/Match Making.png" width="40px" height="40px" class="Matchmaking-img"></a>
+        <a href ="Search.html"><img src="./images/Live chats.png" width="50px" height="50px" class="Search-img"></a>
       </div> 
       </aside>
 
@@ -126,7 +127,7 @@
             </p>
             <div class="puja-options">
              <div class="option">
-              <img alt="Laxmi Pooja" height="200" src="https://storage.googleapis.com/a1aa/image/W3C4yiIYaHJYK98F3RTm7lZrngg6JAyExh9y1riNLYaRHO8E.jpg" width="200"/>
+              <img alt="Laxmi Pooja" height="100px" src="images/LaxmiPooja.png" width="100px" style="justify-content: left;"/>
               <h3>
                Laxmi Pooja
               </h3>
@@ -138,7 +139,7 @@
               </a>
              </div>
              <div class="option">
-              <img alt="Satyanarayan Katha &amp; Pujan" height="200" src="https://storage.googleapis.com/a1aa/image/fCZacyqMqOxaZaIhGQxrl5f2zOrEUvdYOgthsHRj7QDMd4wTA.jpg" width="200"/>
+              <img alt="Satyanarayan Katha &amp; Pujan" height="100px" src="images/Satyanarayana Katha and pujan.png" width="100px" style="justify-content: left;"/>
               <h3>
                Satyanarayan Katha &amp; Pujan
               </h3>
@@ -150,11 +151,12 @@
               </a>
              </div>
              <div class="option">
-              <img alt="Rudrabhishek" height="200" src="https://storage.googleapis.com/a1aa/image/QoUqXet5erndJEgokeREATROHa606gygBExiK9z5lZ9V6whnA.jpg" width="200"/>
+              <img alt="Rudrabhishek" height="100px" src="images/Rudrabhishek.png" width="100px" style="justify-content: left;"/>
               <h3>
                Rudrabhishek
               </h3>
               <div class="price">
+                
                Price ₹5000
               </div>
               <a href="#">
@@ -255,12 +257,23 @@
     <!-- Footer Section -->
     <footer>
       <div class="footer-content">
+        <!-- Footer Logo (left-center) -->
         <div class="footer-logo">
-          <img src="images/Footerimage.png" alt="BhagyaVakta"/>
+          <img src="images/Footerimage.png" alt="BhagyaVakta" />
         </div>
-          
-     </footer>
-     
+        
+        <!-- Footer Text (centered to the right) -->
+        <div class="footer-text">
+          <p>© Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s.</p>
+          <p><img src="images/Icons.png" alt="Icons" /></p>
+        </div>
+        
+        <!-- Copyright (centered at the bottom) -->
+        <div class="copyright">
+          <p>© Copyright 2023, All Rights Reserved by Bhagyavakta</p>
+        </div>
+      </div>
+    </footer>
   </body>
  
   
