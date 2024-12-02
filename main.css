@@ -292,28 +292,35 @@
 }
 
 .container1.content p {
-  margin-top: 100px; /* This could be pushing content lower */
+  margin-top: 100px; 
   position: absolute;
   font-size: 16px;
   line-height: 1.5;
 }
 
 /* aside section */
-.asidebar{
-  width:50px;
-  height:50px;
-  margin:10px;
-  gap: 30px;
-}
-/* aside images */
-.aside-logo{
-  align-items: center;
+.aside .home:hover,
+.home:active,
+.home:visited {
+  background-color: lightcyan; }
+
+.aside .asidebar {
   display: flex;
-  justify-content: center;
-  margin: 15px;
-  object-fit: cover;
-  object-position: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+  position: relative;
+}
+
+.aside .asidebar-item img {
+  width: 30px;
+  height: 40px;
+  display: block;
+}
+.aside .aside-logo{
+  width: 70px;
+  height: 60px;
+  margin-left: 7px;
   
 }
-
-

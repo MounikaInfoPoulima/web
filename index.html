@@ -40,18 +40,45 @@
     <!-- Main Content Section -->
     <main>
       <!-- Aside Section (Sidebar) -->
-      <aside>
-        <img src="./images/Aside section img.png" width="50px" height="50px" class="aside-logo" >
-        <img src="./images/Home icon.png" width="50px" height="50px" style="background-color: lightcyan; padding: 15px;">
-
-       <div class="asidebar" style="padding: 10px;">
-        <a href="kundali.html"> <img src="./images/Kundali icon.png" width="40px" height="40px"></a>
-        <a href="e-pooja.html"> <img src="./images/E-Pooja.png" width="40px" height="40px" class="Kundali-img"></a>
-        <a href ="panchangam.html"> <img src="./images/Panchangam.png" width="40px" height="40px" class="E-pooja-img"></a>
-       <a href="matchmaking.html"> <img src="./images/Match Making.png" width="40px" height="40px" class="Matchmaking-img"></a>
-        <a href ="Search.html"><img src="./images/Live chats.png" width="50px" height="50px" class="Search-img"></a>
-      </div> 
-      </aside>
+      <aside class="aside">
+        <!-- Aside Section Logo -->
+        <img src="./images/Aside section img.png"   width="50" height="50" class="aside-logo">
+        
+        <!-- Home Icon -->
+        
+       <img class="home" src="./images/Home icon.png" width="50px" height="40px" 
+             style=" padding: 15px; ">
+            
+        
+        <!-- Sidebar Navigation -->
+        <div class="asidebar" style="padding: 10px;">
+            <!-- Kundali -->
+            <a class="asidebar items" href="kundali.html">
+                <img src="./images/Kundali icon.png" width="40" height="40" alt="Kundali">
+            </a>
+            
+            <!-- E-Pooja -->
+            <a class="asidebar items" href="e-pooja.html">
+                <img src="./images/E-Pooja.png" width="40" height="40" alt="E-Pooja" class="kundali-img">
+            </a>
+            
+            <!-- Panchangam -->
+            <a class="asidebar items" href="panchangam.html">
+                <img src="./images/Panchangam.png" width="40" height="40" alt="Panchangam" class="e-pooja-img">
+            </a>
+            
+            <!-- Matchmaking -->
+            <a class="asidebar items" href="matchmaking.html">
+                <img src="./images/Match Making.png" width="40" height="40" alt="Matchmaking" class="matchmaking-img">
+            </a>
+            
+            <!-- Search -->
+            <a class="asidebar items" href="search.html">
+                <img src="./images/Live chats.png" width="50" height="50" alt="Search" class="search-img">
+            </a>
+        </div>
+    </aside>
+    
 
       <!-- Main Content -->
       <div class="image-container" >
@@ -257,23 +284,35 @@
     <!-- Footer Section -->
     <footer>
       <div class="footer-content">
-        <!-- Footer Logo (left-center) -->
+        <!-- Footer Logo -->
         <div class="footer-logo">
           <img src="images/Footerimage.png" alt="BhagyaVakta" />
         </div>
-        
-        <!-- Footer Text (centered to the right) -->
-        <div class="footer-text">
-          <p>© Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s.</p>
-          <p><img src="images/Icons.png" alt="Icons" /></p>
-        </div>
-        
-        <!-- Copyright (centered at the bottom) -->
-        <div class="copyright">
+    
+        <!-- Footer Text -->
+        <div class="footer-main">
+          <p class="footer-description">
+            © Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text<br>
+            ever since the 1500s.<br>
+            <a href="https://www.instagram.com" target="_blank" class="icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="mailto:example@email.com" class="icon">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </p>
+          </div>
+          </div>
+          <hr width="90%" align="center" class="custom-hr">
+         <div class="copyright">
           <p>© Copyright 2023, All Rights Reserved by Bhagyavakta</p>
-        </div>
-      </div>
+         </div>
     </footer>
+    
   </body>
  
   

@@ -166,53 +166,55 @@ aside {
 footer {
     position: fixed;  
     bottom: 0;
-    width: 100%;  /* Full width of the page */
-    background-color: #1b143f;  /* Dark background for the footer */
+    width: 100%;  
+    height: 20%;
+    background-color: #333;  /* Dark background for the footer */
     color: white;  /* White text */
-    text-align: center;  /* Center everything inside the footer */
     padding: 20px 0;  /* Padding for spacing around content */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 0 20px; 
+}
+
+.footer-content .footer-logo img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain; 
+    margin-left: 100px;
+}
+
+.footer-content .footer-main .footer-description{
+    object-fit: contain; 
+    margin-left: 600px;
+    margin-bottom: 10px;
+    text-align: justify; 
+    text-align-last: right;
+}
+.footer-content .footer-main .footer-description .icon{
+    height: 30px;
+    width:30px;
+    color:white;
+}
+
+.custom-hr {
+    border: none;                  /* Remove default border */
+    border-top: 1px solid rgb(12, 82, 78); /* Set a very thin border with your desired color */
+    width: 90%;                     /* Set the width to 90% */
   }
   
-  /* Container for footer content */
-  .footer-content {
+.copyright {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute items across the footer */
-    align-items: center;  /* Center all child elements horizontally */
+    justify-content: center;  /* Centers the copyright text */
+    align-items: flex-end;    /* Aligns the text to the bottom */
+    font-size: 14px;
+    padding-bottom: 10px;     /* Adds space from the bottom */
   }
-  .footer-logo {
-    display: flex;
-    justify-content: flex-start; /* Align to the left */
-    align-items: center; /* Center the image vertically */
-  }
+
   
-  /* Style for the footer logo image */
-  .footer-logo img {
-    width: 150px;  /* You can adjust the size of the footer image */
-    margin-bottom: 10px; 
-    margin-right: 1000px; 
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-  }
-  .footer-text p {
-    font-size: 14px;  /* Font size for the text */
-    margin-left:800px; 
-    margin-bottom: 30px; /* Remove default margin */
-    max-width: 500px;  /* Optional: Limit the width of the paragraph */
-    line-height: 1.5; /* Line height for better readability */
-    color: white; /* Ensure the text is visible on dark background */
-  }
-  
-  /* Style for the copyright text */
   .copyright p {
-    font-size: 14px;  /* Font size for the copyright text */
-    margin: 0;  /* Remove any default margin */
+    margin: 0;
   }
-  
-  /* Optional: Hover effect on the copyright text */
-  .copyright p:hover {
-    color: #f0f0f0;  /* Slightly lighter color on hover */
-    cursor: pointer;  /* Change cursor to pointer */
-  }
-  
