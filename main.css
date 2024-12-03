@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 60px;
     
 }
 .panchang-title {
@@ -54,27 +55,27 @@
 /* Secound Paragraph */
 
 .report {
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 .report h2 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 10px;
   justify-content: center;
 
   text-align: center;
 }
-.report p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
+
 .report .offer {
   background-color: #b2ebf2;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right:100px;
+  width: 60%;
 }
 .report .offer h3 {
   font-size: 24px;

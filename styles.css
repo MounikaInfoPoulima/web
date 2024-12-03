@@ -11,11 +11,13 @@ body {
 }
 
 nav {
-    padding: 20px;
+    padding: 30px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 8; 
+    position: fixed;
+    background-color: lightcyan;
 }
 
 
@@ -59,7 +61,7 @@ nav ul li a:hover {
     width: 300px;
     padding-left: 30px;  /* Space for the icon */
     border-radius: 20px;
-    padding-left: -15px;
+    padding-left: -10px;
     border: 1px solid #ccc;
     font-size: 16px;
     outline: none;  /* Remove default outline */
@@ -218,3 +220,45 @@ footer {
   .copyright p {
     margin: 0;
   }
+  .separa{
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+    margin-left:-300px;
+    margin-right: 200px;
+    width: 60%; 
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    margin-left: auto; /* Centers the container horizontally */
+    margin-right: auto; 
+
+    
+  }
+  .separa p{
+    margin:0;
+    padding: 0; /* Remove default padding */
+    width: 90%;
+   text-align: end;
+   text-align: justify; /* Justify the text to ensure it starts and ends at the same points */
+    line-height: 1.6; 
+}
+
+.offer h3{
+    font-size: 26px;
+}
+
+.order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600; /* orange color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px; /* Ensure space between the text and the button */
+    text-align: center;
+}
+
+.order-button:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+}
