@@ -1,7 +1,7 @@
 /* Reset some basic styles for consistency */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #e0f7f9;
+    background-color:lightcyan;
     margin: 0;
     padding: 0;
 }
@@ -170,6 +170,7 @@ footer {
     bottom: 0;
     width: 100%;  
     height: 20%;
+    margin-top: 40px;
     background-color: #333;  /* Dark background for the footer */
     color: white;  /* White text */
     padding: 20px 0;  /* Padding for spacing around content */
@@ -220,29 +221,7 @@ footer {
   .copyright p {
     margin: 0;
   }
-  .separa{
-    display: flex;
-    flex-flow: column;
-    margin-top: 10px;
-    margin-left:-300px;
-    margin-right: 200px;
-    width: 60%; 
-    justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
-    margin-left: auto; /* Centers the container horizontally */
-    margin-right: auto; 
-
-    
-  }
-  .separa p{
-    margin:0;
-    padding: 0; /* Remove default padding */
-    width: 90%;
-   text-align: end;
-   text-align: justify; /* Justify the text to ensure it starts and ends at the same points */
-    line-height: 1.6; 
-}
-
+  
 .offer h3{
     font-size: 26px;
 }
@@ -262,3 +241,14 @@ footer {
 .order-button:hover {
     background-color: #e65c00; /* Darker orange on hover */
 }
+
+
+
+/* prices and plans */
+
+.puja-options {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adds space between each option */
+}
+
