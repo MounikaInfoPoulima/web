@@ -438,7 +438,7 @@
   background-color: rgba(243, 225, 189, 1);
   margin-bottom: 80px; 
   width: 90%;
-  height: 500px;
+  height: 450px;
   padding-bottom: 400px;  /* Fixed height */
   display: flex;
   align-items: center;
@@ -446,7 +446,8 @@
   /* overflow: hidden;  */
   margin-right: auto;
   box-sizing: border-box; 
-  position: relative;    
+  position: relative;  
+  border-radius:30px;  
 
 }
 .containerlogo.hidden {

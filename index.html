@@ -13,10 +13,15 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="chat.js"></script>
+    <style>
+      input::placeholder {
+        color: white; /* Sets the placeholder text color to white */
+      }
+    </style>
 
 
   </head>
-  <body>
+  <body styles="width: 100%; height: 100vh;">
 
     <!-- Navigation Section -->
     <nav id="nav">
@@ -234,6 +239,58 @@
 
           <!-- container with logo -->
           <div class="containerlogo">
+              <!-- Phone Content Section -->
+              <div style="position: relative; margin-top:90px; height: 100px; margin-right: 400px; ">
+              <div class="phone-content" style= " width: 300px; background: linear-gradient(205.23deg, #3C3A3A 1.7%, #56FBF9 34.22%, #355F8D 93.07%); border-radius:30px;">
+                <img style="align-items: baseline; width:30px; height:30px; margin-right: 230px; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzmA1NbQoU7vJJba7yy2OiLUrsXK2Sl8LhA&s" alt="Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                <img src ="images/Logo2.png" alt="Logo" style="width: 50px; height: 50px; align-items: first baseline; ">
+                    <div style="padding-left: 15px; color: black; font-weight: bold; font-size: 22px; display: flex; justify-content: flex-start; align-items: center;">
+                      Hi </div>
+                      <div style="color: black; padding-left: 15px; font-weight: bold; font-size: 22px; display: flex; justify-content: flex-start; align-items: center;">Ramesh!</div>
+                                        
+                      <div  class="search-bar" style=" margin-left: 50px;  background-color:rgba(14, 111, 117, 0.86); width:200px;">
+                        <i class="fas fa-search"></i>
+                        <input style="color: white;" placeholder="Search Categories" type="text" />
+                      </div>
+                    
+                      <div class="panchang">
+                          <h2 style="color: black;">Today's Panchang</h2>
+                          <div style="background-color:rgba(14, 111, 117, 0.86); border-radius: 20px;" class="details">
+                              <div>
+                                  <p style="color:white; margin-left: 10px;">TITHI</p>
+                                  <h3 style="margin-left: 10px;">6</h3>
+                                  <p style="color:white;  margin-left: 10px;">SHASHTHI</p>
+                                  <p style="color:white; padding-left: 10px;">Start: Yesterday 09:24 PM</p>
+
+                              </div>
+                              <div style="color: white;">
+                                  <p>BUDDHAVARA</p>
+                                  <p style="color:black; font-weight: bold; font-size:20px">Dec 20, 2022</p>
+                                  <p >Margashirsha - Krishna</p>
+                                  <p>End: 11:45 PM</p>
+                              </div>
+                          </div>
+                      
+          
+                      <div class="ad">
+                          <h3>Gurudev Ji's Generate Kundli For Free</h3>
+                          <button style="padding-right: 10px; border-radius:15px; background-color: rgb(122, 4, 4);">Generate Kundli Report</button>
+                      </div>
+                  </div>
+                </div>
+          
+              <!-- Logo Section -->
+              <!-- <div class="logo" style="width: 500px; height: 500px; margin-right: -50px;">
+                  <img alt="BhagyaVakta Logo" src="images/Footerimage.png"/>
+              </div> -->
+          
+              <!-- Google Play Badge Section -->
+              <!-- <div class="google-play">
+                  <img alt="Get it on Google Play" height="80" src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg" width="200"/>
+              </div> -->
+          </div>
+
+            
             <div class="chat">
                 <!-- Close button (cross mark) -->
                 <button  class="close-btn" onclick="closeChat()">×</button>
@@ -254,74 +311,13 @@
                   <span>💬</span> </div>
             </div>
         </div>
+        
         <div style="gap: 40px; margin:400px; width:100%; height: 200px;">
 
         </div>
         
             
-            <!-- <div class="phone" style="overflow: hidden;">
-             <div class="phone-content">
-              <h1>
-               Hi, Ramesh!
-              </h1>
-              <div class="search-bar">
-               <i class="fas fa-search">
-               </i>
-               <input placeholder="Search Categories" type="text"/>
-              </div>
-              <div class="panchang">
-               <h2>
-                Today's Panchang
-               </h2>
-               <div class="details">
-                <div>
-                 <p>
-                  TITHI
-                 </p>
-                 <h3>
-                  6
-                 </h3>
-                 <p>
-                  SHASHTHI
-                 </p>
-                </div>
-                <div>
-                 <p>
-                  BUDDHAVARA
-                 </p>
-                 <p>
-                  Dec 20, 2022
-                 </p>
-                 <p>
-                  Margashirsha - Krishna
-                 </p>
-                 <p>
-                  Start: Yesterday 09:24 PM
-                 </p>
-                 <p>
-                  End: 11:45 PM
-                 </p>
-                </div>
-               </div>
-              </div>
-              <div class="ad">
-               <h3>
-                Gurudev Ji's Generate Kundli For free
-               </h3>
-               <button>
-                Generate Kundli Report
-               </button>
-              </div>
-             </div>
-            </div> -->
-            <!-- <div class="logo" style="width: 500px; height: 500px; margin-right: -50px;">
-             <img alt="BhagyaVakta Logo"  src="images/Footerimage.png" />
             
-            </div>
-            <div class="google-play">
-             <img alt="Get it on Google Play" height="80" src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg" width="200"/>
-            </div> -->
-     
   </main>
 
     <!-- Footer Section -->
