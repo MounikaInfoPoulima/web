@@ -450,37 +450,69 @@
   border-radius:30px;  
 
 }
-.containerlogo.hidden {
-  display: none; 
+
+
+/* Hides elements with the hidden class */
+.hidden {
+  display: none;
 }
 
+/* Chat icon styling */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-color: #0084ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chat-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Chat box styling */
 .chat {
   position: absolute;
   top: -150px;
-  bottom: 20px;     /* Adjust space from the top */
-  right: 40px;   /* Adjust space from the right */
+  left: 650px;
+  right: 20px;
+  bottom: 0;
+  z-index: 9999;
   background-color: rgba(195, 243, 251, 1);
-  width: 350px;
-  height: 380px;
-  padding-bottom: 40px;
+  width: 30%;
+  height: 400px;
   display: flex;
   flex-direction: column;
-
-  
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
-.chat .chat-text {
+
+
+
+
+/* Styling for chat text */
+.chat-text {
   font-size: 20px;
-  color:black;
+  color: black;
   font-weight: bold;
   margin-left: 30px;
   padding: 2px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   text-overflow: ellipsis;
   margin-right: 40px;
   font-family: 'Poppins', sans-serif;
-  
-
 }
+
+/* Styling for the chat image */
 .chatimg {
   display: flex;
   justify-content: center;
@@ -490,47 +522,40 @@
   overflow: hidden;
   margin-top: 50px;
   margin-left: 10px;
-  flex-direction: column;  /* Stack the image and text vertically */
+  flex-direction: column; /* Stack the image and text vertically */
 }
 
 .chatimg img {
-  max-width: 100%;         /* Ensures the image is responsive */
-  height: auto;            /* Maintains aspect ratio */
-  border-radius: 10px;     /* Round the corners of the image */
+  max-width: 100%; /* Makes the image responsive */
+  height: auto;    /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounded corners for image */
 }
 
-.chatimg .chat-name{
+.chat-name {
   font-weight: bold;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
-.minimized {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ccc;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: none; /* Initially hidden */
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 1000;
+
+/* Styling for the buttons */
+.buttns {
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+
+
 }
-.chat.minimized {
-  display: none;
+
+.buttns button {
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 5px;
+  width: 90px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
-.boat {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  height: auto;
-}
+
+/* Close button styling */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -546,34 +571,26 @@
   width: 25px;
   height: 25px;
 }
-/* .containerlogo.minimized {
-  opacity: 0;
-  pointer-events: none;
-} */
-/* Minimized button styling */
-/* .minimized-btn {
-  background-color: aquamarine;
-  border-radius: 10px;
-  padding: 5px;
-  width: 90px;
-  margin-top: 10px;
-  cursor: pointer;
-} */
 
-/* .containerlogo.phone {
+/* Minimize button */
+.minimized {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
   bottom: 20px;
-  overflow: hidden;
-  background-color: rgba(4, 120, 87, 1);
-  padding: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #0084ff;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.phone-content {
-  color: white;
-  font-size: 24px;
-} */
-
-
+/* Styles for when the chat is hidden */
+.chat.hidden {
+  display: none;
+}
