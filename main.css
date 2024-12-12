@@ -413,10 +413,12 @@
   margin: 0 auto;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1px;
   word-wrap: break-word;
   text-align: justify;
   padding: 0 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* sepra stylings */
