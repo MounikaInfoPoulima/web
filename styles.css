@@ -15,7 +15,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 8; 
+    z-index:1000; 
     position: fixed;
     background-color: lightcyan;
 }
@@ -64,18 +64,18 @@ nav ul li a:hover {
     padding-left: -10px;
     border: 1px solid #ccc;
     font-size: 16px;
-    outline: none;  /* Remove default outline */
+    outline: none;  
 }
 .search-input::placeholder {
-    padding-left: 20px; /* Add padding to the placeholder text */
-    color: #aaa;        /* Set color of the placeholder text */
-    font-size: 14px;    /* Optional: Adjust font size of the placeholder */
+    padding-left: 15px; 
+    color: #aaa;       
+    font-size: 14px;    
 }
 
 /* Style for the search button with icon */
 .search-icon {
     position: absolute;
-    left: 8px; /* Position the icon inside the input on the left */
+    left: 8px; 
     background: none;
     border: none;
     cursor: pointer;
@@ -88,18 +88,21 @@ nav ul li a:hover {
 
 /* Optional hover effects */
 .search-container:hover .search-input {
-    border-color: #56FBF9; /* Change border color on hover */
+    border-color: #56FBF9; 
 }
 
 
 .Container {
-    list-style: none; /* Remove bullets */
+    list-style: none; 
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end; 
 
 }
+.search-input:focus {
+    padding-left: 60px; /* Keep space when input is focused */
+  }
 
 /* Style for each navigation link */
 .Container li a {
@@ -151,7 +154,7 @@ aside {
     top: 0px; 
     bottom: 0;
     left: 0;
-    z-index: 25; 
+    z-index: 1001; 
     overflow-y: auto;
     overflow-x: auto;
 }
@@ -173,7 +176,8 @@ footer {
     margin-top: 40px;
     background-color: #333;  /* Dark background for the footer */
     color: white;  /* White text */
-    padding: 20px 0;  /* Padding for spacing around content */
+    padding: 20px 0;
+    z-index: 1000;  /* Padding for spacing around content */
 }
 
 .footer-content {
