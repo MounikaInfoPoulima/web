@@ -2,8 +2,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color:lightcyan;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0;
+    /* padding: 0; */
+    padding-bottom: 800px;
+
 }
 .panchang-text-container {
     align-items: center;

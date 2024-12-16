@@ -444,15 +444,16 @@
 /* containerlogo chat boat */
 .containerlogo{
   background-color: rgba(243, 225, 189, 1);
-  margin-bottom: 80px; 
+  margin-bottom:1000px; 
   width: 90%;
-  height: 450px;
+  height: 380px;
   padding-bottom: 400px;  /* Fixed height */
   display: flex;
   align-items: center;
   justify-content: center;
   /* overflow: hidden;  */
-  margin-right: auto;
+  /* margin-right: auto; */
+  margin-bottom: 300px;
   box-sizing: border-box; 
   position: relative;  
   border-radius:30px;  
