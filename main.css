@@ -435,8 +435,9 @@ margin-left: 200px;
 .containerlogo {
   background-color: rgba(243, 225, 189, 1);
   width: 90%;
-  min-height: 380px;
+  min-height: 300px;
   display: flex;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
