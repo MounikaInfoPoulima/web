@@ -21,10 +21,10 @@
 
 
   </head>
-  <body styles="width: 100%; height: 100vh;">
+  <body styles="width: 100%; height: 100vh; ">
 
     <!-- Navigation Section -->
-    <nav id="nav">
+    <nav style=" z-index:10001;" id="nav">
       <ul class="Container">
         <li class="search-container">
           <input
@@ -51,7 +51,7 @@
     <!-- Main Content Section -->
     <main>
       <!-- Aside Section (Sidebar) -->
-      <aside class="aside">
+      <aside style="z-index:10002" class="aside">
         <!-- Aside Section Logo -->
         <img src="./images/Aside section img.png"   width="50" height="50" class="aside-logo">
         
@@ -184,10 +184,11 @@
               <div class="option">
                 <img class="option-img" alt="Laxmi Pooja" src="images/LaxmiPooja.png" />
                 <div class="option-content">
-                  <h2>Laxmi Pooja</h2>
+                 <div> <h2>Laxmi Pooja</h2>
                   <a class="book"  href="#">Book Now</a>
                   <div class="price">Price
                     <p>₹5000</p>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -241,26 +242,33 @@
           </div>
 
           <!-- container with logo -->
-          <div class="containerlogo" style=" z-index: 10px; overflow: hidden; position:relative;">
+          <div class="containerlogo" style=" z-index: 999px;  position:relative;">
+            <div style="margin-top: 100px; margin-left:400px; margin-bottom: 80px;">
+              <!-- Logo Section -->
+              <img src="images/Footerimage.png"/ style="width: 300px; height: 250px; " alt="BhagyaVakta Logo" >
+              <div>
+              <img src="images/Google Play.png" style="width: 300px; height: 100px; " alt="Google Play Logo" >
+            </div>
+          </div>
               <!-- Phone Content Section -->
-              <div style="position: absolute; top:20px; z-index: 9px; margin-top:50px; height: 50px; margin-left: 250px; ">
-              <div class="phone-content" style= "margin-left:-450px; width: 300px; background: linear-gradient(205.23deg, #3C3A3A 1.7%, #56FBF9 34.22%, #355F8D 93.07%); border-radius:30px;">
-                <img style="align-items: baseline; width:30px; height:30px; margin-right: 230px; " src="httpggs://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzmA1NbQoU7vJJba7yy2OiLUrsXK2Sl8LhA&s" alt="Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+              <div style="position: absolute; top:20px;  margin-top:5px; z-index:1; margin-left: 250px; ">
+              <div class="phone-content" style= " z-index:1; padding-top:15px;margin-left:-350px; width: 250px; background: linear-gradient(205.23deg, #3C3A3A 1.7%, #56FBF9 34.22%, #355F8D 93.07%); border-radius:30px;">
+                <img src="https://w7.pngwing.com/pngs/402/481/png-transparent-hamburger-button-drop-down-list-computer-icons-navigation-bars-and-page-menu-templates-text-rectangle-black.png"   style="align-items: baseline; width:30px; height:30px;margin-left: 5px;; margin-right: 230px; background-color: rgb(14, 43, 43); "  alt="Icon" >
                 <img src ="images/Logo2.png" alt="Logo" style="width: 50px; height: 50px; align-items: first baseline; ">
                     <div style="padding-left: 15px; color: black; font-weight: bold; font-size: 22px; display: flex; justify-content: flex-start; align-items: center;">
                       Hi </div>
                       <div style="color: black; padding-left: 15px; font-weight: bold; font-size: 22px; display: flex; justify-content: flex-start; align-items: center;">Ramesh!</div>
                                         
-                      <div  class="search-bar" style=" margin-left: 50px;  background-color:rgba(14, 111, 117, 0.86); width:200px;">
+                      <div  class="search-bar" style=" margin-left: 20px;  background-color:rgba(14, 111, 117, 0.86); width:200px;">
                         <i class="fas fa-search"></i>
                         <input style="color: white;" placeholder="Search Categories" type="text" />
                       </div>
                     
-                      <div  class="panchang">
+                      <div  class="panchang" style="width:100%;  padding:0px; border-top-left-radius: 3px; border-bottom-right-radius: 3px; margin:0px; padding-top: 5px; padding-bottom: 5px;">
                           <h2 style="color: black;">Today's Panchang</h2>
                           <div style="background-color:rgba(14, 111, 117, 0.86); border-radius: 20px;" class="details">
                               <div>
-                                  <p style="color:white; margin-left: 10px;">TITHI</p>
+                                  <p style="color:white; margin-left: 10px; font-size:15px;">TITHI</p>
                                   <h3 style="margin-left: 10px;">6</h3>
                                   <p style="color:white;  margin-left: 10px;">SHASHTHI</p>
                                   <p style="color:white; padding-left: 10px;">Start: Yesterday 09:24 PM</p>
@@ -273,19 +281,16 @@
                                   <p>End: 11:45 PM</p>
                               </div>
                           </div>
+                        </div>
+
                       
-          
                       <div class="ad">
                           <h3>Gurudev Ji's Generate Kundli For Free</h3>
                           <button style="padding-right: 10px; border-radius:15px; background-color: rgb(122, 4, 4);">Generate Kundli Report</button>
                       </div>
                   </div>
-                </div>
           
-              <!-- Logo Section -->
-              <!-- <div class="logo" style="width: 500px; height: 500px; margin-right: -50px;">
-                  <img alt="BhagyaVakta Logo" src="images/Footerimage.png"/>
-              </div> -->
+             
           
               <!-- Google Play Badge Section -->
               <!-- <div class="google-play">
@@ -294,7 +299,7 @@
           </div>
 
             
-          <div class="chat">
+          <div style="z-index:1000" class="chat">
             <!-- Close button (cross mark) -->
             <button class="close-btn" onclick="closeChat()">×</button>
             
@@ -306,8 +311,8 @@
             </div>
         
             <div style="margin: 20px;" class="buttns">
-                <button class="call-btn" style="padding:10px; margin-right: 10px; ">Call</button>
-                <button class="chat-btn" style="padding:10px; margin-right: 10px;">Chat</button>
+                <button class="call-btn" style="padding:10px; margin-right: 10px; border-color: lightcyan;">Call</button>
+                <button class="chat-btn" style="padding:10px; margin-right: 10px; border-color: lightcyan;">Chat</button>
             </div>
         
             <!-- <div class="minimized" onclick="restoreChat()">
@@ -317,7 +322,7 @@
         
         <!-- Chat Icon for minimized state -->
         <div class="chat-icon" onclick="restoreChat()">
-            <img src="images/chat-icon.png" alt="Chat Icon">
+            <img src="https://media.istockphoto.com/id/1060696342/vector/robot-icon-chat-bot-sign-for-support-service-concept-chatbot-character-flat-style.jpg?s=612x612&w=0&k=20&c=t9PsSDLowOAhfL1v683JMtWRDdF8w5CFsICqQvEvfzY=" alt="Chat Icon">
         </div>
         
         </div>
@@ -332,7 +337,7 @@
 
 
     <!-- Footer Section -->
-    <footer >
+    <footer style="z-index:10004" >
       <div class="footer-content">
         <!-- Footer Logo -->
         <div class="footer-logo">
