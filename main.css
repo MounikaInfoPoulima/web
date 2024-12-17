@@ -588,6 +588,97 @@ margin-left: 200px;
 }
 
 /* Styles for when the chat is hidden */
-.chat.hidden {
-  display: none;
+/* Container that holds the background image and content */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Background image styling */
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Centering content inside container */
+.content {
+  position: absolute;
+  top: 4%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+/* Headings and text styling */
+.content h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.content h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.content p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Button styling */
+.button {
+  background-color: #8b4513;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-left:70%; 
+  margin-top:-100%;
+}
+
+/* Navigation button styling */
+.nav-button {
+  position: absolute;
+  top: 4%;
+  
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav-button.left {
+  left: 10px;
+}
+
+.nav-button.right {
+  right: 10px;
+}
+
+/* Dots for the slider navigation */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #000080;
 }
