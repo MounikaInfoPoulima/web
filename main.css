@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 60px;
+    margin-right: 80px;
     
 }
 .panchang-title {
@@ -78,7 +78,7 @@
   width: 60%;
 }
 
-.report .offer .price {
+.report .offer {
   font-size: 18px;
   margin: 10px 0;
 }
@@ -113,10 +113,8 @@
 .puja-options {
   display: flex;
   justify-content: space-between; 
-  /* gap: 20px;  */
-  flex-wrap: wrap; 
-  padding-right: 40px;
-  padding-left:5px;
+
+  
 }
 
 /* Styling for Each Option Container */
@@ -145,22 +143,22 @@
 }
 
 /* Option Content */
-.option-content h2 {
-  text-align: center;
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 18px;
-  padding-left: 20px;
-}
-.option-content .book a{
-  display:flex;
-  flex-direction: row;
-  font-size: 18px;
-  margin: 0;
-  padding-left: 20px;
+
+.option-content{
+  width: 100%;
 }
 
-.option-content .price p {
+.option-content h2 {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 80px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.option-content p {
   display: flex;
   flex-direction: row;
   align-items: right;
@@ -169,19 +167,38 @@
   margin: 0;
   font-weight: bold;
   text-align: left;
-  max-width: 50px; /* Set your desired width */
   word-wrap: break-word; 
-  max-height: 40px;
-  white-space: normal;}
+  white-space: normal;
+}
+.price-and-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
 /* Book Now Button */
+
+.book-now-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
 .option a {
-  padding: 10px 20px;
   background-color: skyblue;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 10px;
+  padding:5px 5px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .option a:hover {
@@ -189,17 +206,9 @@
 }
 
 /* Price */
-.price {
-  margin-top: 10px;
-}
-
-.price p {
-  font-size: 18px;
-  margin: 0;
-  font-weight: bold;
-  text-align: center;
-}
-
+/* .price {
+margin-left: 200px;  
+} */
 
 
 
@@ -442,22 +451,31 @@
 
 
 /* containerlogo chat boat */
-.containerlogo{
+.containerlogo {
   background-color: rgba(243, 225, 189, 1);
-  /* margin-bottom:1000px;  */
   width: 90%;
-  height: 380px;
-  /* padding-bottom: 400px;  Fixed height */
+  min-height: 300px;
   display: flex;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden;  */
-  /* margin-right: auto; */
-  box-sizing: border-box; 
-  position: relative;  
-  border-radius:30px;
-  margin-bottom: 200px;
+  box-sizing: border-box;
+  position: relative;  /* Makes it the positioning context for .chat */
+  border-radius: 10px;
 }
+
+.chat {
+  position: absolute;  /* Position relative to .containerlogo */
+  top: -140px;   /* Move it upwards to overlap with .containerlogo */
+  right: 20px;  /* Keep it 20px from the right side of .containerlogo */
+  background-color: rgba(195, 243, 251, 1);
+  width: 40%;
+ min-height: 300px;  /* Set height of chat box */
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
 
 
 /* Hides elements with the hidden class */
@@ -470,12 +488,12 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 10001;
+  /* z-index: 2; */
   cursor: pointer;
   width: 60px;
   height: 60px;
   background-color: #0084ff;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,23 +506,6 @@
 }
 
 /* Chat box styling */
-.chat {
-  position: absolute;
-  top: -150px;
-  left: 650px;
-  right: 20px;
-  bottom: 0;
-  z-index: -999;
-  background-color: rgba(195, 243, 251, 1);
-  width: 40%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1;  /* Ensures the chat is below the navbar and footer */
-    overflow-y: auto;
-}
 
 .chat .chat-content {
   flex: 1;
@@ -606,6 +607,97 @@
 }
 
 /* Styles for when the chat is hidden */
-.chat.hidden {
-  display: none;
+/* Container that holds the background image and content */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Background image styling */
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Centering content inside container */
+.content {
+  position: absolute;
+  top: 4%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+/* Headings and text styling */
+.content h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.content h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.content p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Button styling */
+.button {
+  background-color: #8b4513;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-left:70%; 
+  margin-top:-100%;
+}
+
+/* Navigation button styling */
+.nav-button {
+  position: absolute;
+  top: 4%;
+  
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav-button.left {
+  left: 10px;
+}
+
+.nav-button.right {
+  right: 10px;
+}
+
+/* Dots for the slider navigation */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #000080;
 }
